@@ -251,12 +251,6 @@ function showComments(){
 <script>
     $(function () {
         var video=document.getElementById('videoHappiness');
-        video.onerror=function(){
-            var download=confirm('对不起，该视频已失效或网址被墙。\n本站已备份了该文件，供不时只需。\n是否要下载？');
-            if (download) {
-                location.href='downloads/the%20Secret%20of%20Happiness.mkv';
-            }
-        };
         video.src="http://download.ted.com/talks/DanGilbert_2004-480p.mp4?apikey=489b859150fc58263f17110eeb44ed5fba4a3b22";
     });
 function videoError(){
